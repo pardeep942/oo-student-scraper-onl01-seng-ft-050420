@@ -5,8 +5,6 @@ require 'nokogiri'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    
-    def self.scrape_index_page(index_url)
 
     info = []
     page = Nokogiri::HTML(open(index_url))
