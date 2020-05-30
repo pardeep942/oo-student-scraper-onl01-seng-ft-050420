@@ -5,9 +5,8 @@ require 'nokogiri'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    binding.pry
+    
     students << [ ]
-
 
     doc.css("div.student-card").each do |student|
       students << {
