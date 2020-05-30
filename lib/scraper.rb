@@ -15,6 +15,7 @@ class Scraper
       info << {:name => card.css("h4").text, :location => card.css("p").text, :profile_url => card.css("a")[0]["href"]}
     end
     info
+  end
 
   def self.scrape_profile_page(profile_url)
     doc=Nokogiri::HTML(open(profile_url))
