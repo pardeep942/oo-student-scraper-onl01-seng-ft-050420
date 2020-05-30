@@ -16,7 +16,7 @@ class Scraper
         profile_url: student.css("a").attribute("href").value
       }
     end
-    students_
+    students_array
     
   end
 
